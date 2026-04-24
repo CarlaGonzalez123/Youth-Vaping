@@ -1,1 +1,289 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Youth Vaping Awareness</title>\n    <link rel="stylesheet" href="styles.css">\n    <style>\n        body {\n            font-family: 'Arial', sans-serif;\n            margin: 0;\n            padding: 0;\n            background-color: #f4f4f4;\n            color: #333;\n            line-height: 1.6;\n        }\n        header {\n            background: linear-gradient(to right, #4caf50, #8bc34a);\n            color: white;\n            padding: 10px;\n            text-align: center;\n            box-shadow: 0 4px 8px rgba(0,0,0,0.2);\n        }\n        h1 {\n            font-size: 2.5em;\n            margin: 0;\n        }\n        section {\n            padding: 20px;\n            margin: 10px;\n            background: white;\n            border-radius: 5px;\n            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n        }\n        footer {\n            text-align: center;\n            padding: 10px;\n            background: #233;\n            color: white;\n            position: fixed;\n            width: 100%;\n            bottom: 0;\n        }\n        .fade-in {\n            animation: fadeIn 2s;\n        }\n        @keyframes fadeIn {\n            from { opacity: 0; }\n            to { opacity: 1; }\n        }\n    </style>\n</head>\n<body>\n    <header>\n        <h1>Youth Vaping Awareness</h1>\n    </header>\n    <section class="fade-in">\n        <h2>Understanding Vaping</h2>\n        <p>Vaping is an emerging trend among youth, and it's essential to spread awareness about its effects. This webpage aims to provide vital information and resources.</p>\n    </section>\n    <footer>\n        <p>&copy; 2026 Youth Vaping Awareness</p>\n    </footer>\n</body>\n</html>\n
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youth Vaping Awareness</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .blog-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .blog-header h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            font-size: 0.95rem;
+            opacity: 0.95;
+            flex-wrap: wrap;
+        }
+
+        .blog-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .blog-content {
+            padding: 2rem;
+        }
+
+        .blog-content h3 {
+            color: #667eea;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.4rem;
+        }
+
+        .blog-content p {
+            margin-bottom: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .blog-content ul, .blog-content ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-content li {
+            margin-bottom: 0.6rem;
+            color: #555;
+        }
+
+        .highlight {
+            background: #f0f4ff;
+            padding: 1.5rem;
+            border-left: 4px solid #667eea;
+            margin: 1.5rem 0;
+            border-radius: 5px;
+        }
+
+        .highlight strong {
+            color: #764ba2;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav a {
+                margin: 0 0.8rem;
+                font-size: 0.9rem;
+            }
+
+            .blog-header h2 {
+                font-size: 1.5rem;
+            }
+
+            .blog-meta {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+
+            .blog-content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🚭 Youth Vaping Awareness</h1>
+        <p>Understanding the Impact on Young People</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#article">Article</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <article class="blog-card">
+            <div class="blog-header">
+                <h2>The Growing Epidemic: Youth Vaping Awareness</h2>
+                <div class="blog-meta">
+                    <span>📅 April 24, 2026</span>
+                    <span>✍️ Carla Gonzalez</span>
+                    <span>⏱️ 8 min read</span>
+                </div>
+            </div>
+
+            <div class="blog-content">
+                <h3>Why This Matters</h3>
+                <p>
+                    Youth vaping has become a critical public health concern in recent years. With the rise of e-cigarettes 
+                    and vaping devices, an alarming number of young people have started using these products, often unaware of 
+                    the potential health risks associated with them.
+                </p>
+
+                <div class="highlight">
+                    <strong>Did You Know?</strong> Studies show that youth who vape are more likely to transition to 
+                    traditional cigarette smoking, making vaping a potential gateway to nicotine addiction.
+                </div>
+
+                <h3>The Health Impacts</h3>
+                <p>Vaping poses several health risks to young people:</p>
+                <ul>
+                    <li><strong>Nicotine Addiction:</strong> Vaping devices often contain high levels of nicotine, which can lead to addiction and affect developing brains.</li>
+                    <li><strong>Lung Damage:</strong> The chemicals in vape aerosol can cause inflammation and damage to lung tissue.</li>
+                    <li><strong>Brain Development:</strong> Nicotine affects the development of attention, learning, and impulse control in adolescents.</li>
+                    <li><strong>Cardiovascular Risks:</strong> Vaping can increase heart rate and blood pressure.</li>
+                </ul>
+
+                <h3>Why Young People Are Vulnerable</h3>
+                <p>Several factors make youth particularly susceptible to vaping:</p>
+                <ol>
+                    <li>Peer pressure and social influence</li>
+                    <li>Marketing tactics targeting younger audiences</li>
+                    <li>Misconceptions about safety and reduced risk</li>
+                    <li>The appeal of flavors and sleek device designs</li>
+                    <li>Lack of awareness about nicotine content</li>
+                </ol>
+
+                <h3>Taking Action</h3>
+                <p>
+                    Education and awareness are crucial in combating youth vaping. Parents, educators, and healthcare providers 
+                    must work together to provide accurate information about the risks associated with vaping and support young 
+                    people in making healthy choices.
+                </p>
+
+                <div class="highlight">
+                    <strong>Resources Available:</strong> If you or someone you know is struggling with vaping or nicotine addiction, 
+                    there are resources available. Contact your local health department or visit trusted health websites for support.
+                </div>
+
+                <h3>Conclusion</h3>
+                <p>
+                    The fight against youth vaping requires a collective effort. By raising awareness, providing education, and 
+                    supporting young people, we can help reduce the prevalence of vaping among adolescents and protect their health 
+                    and future.
+                </p>
+
+                <button class="cta-button">Learn More Resources</button>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Youth Vaping Awareness Campaign. All rights reserved.</p>
+        <p>For questions or concerns, please contact: <strong>info@youthvapingawareness.org</strong></p>
+    </footer>
+</body>
+</html>
